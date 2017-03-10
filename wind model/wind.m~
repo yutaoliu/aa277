@@ -1,0 +1,33 @@
+% Gaussian vertical wind distribution
+% simulates arbitrarily located thermal
+% of sinusoidal time-varying strength
+
+clear; close; clc;
+
+[X,Y] = meshgrid(0:.05:1,0:.05:1); % 1x1 domain
+thermal.n = 2;
+thermal.pos = rand(thermal.n,2);
+figure(1)
+filename = 'wind.gif';
+for t = 0:.05:1
+    W = [];
+    for k=1:thermal.n
+        K = 1 + sin(t+rand(1)); % strength of thermal, random phase
+        quiver3(thermal.pos(k,1), thermal.pos(k,2), 0,...
+                0, 0, K, 'r'); hold on
+        Wk = exp(-((X-thermal.pos(k,1)).^2+...
+                   (Y-thermal.pos(k,2)).^2)*2))
+        W = W + Wk;
+    end
+    surf(X,Y,W); 
+    
+    drawnow
+    frame = getframe(1);
+    im = frame2im(frame);
+    [imind,cm] = rgb2ind(im,256);
+    if n == 1;
+        imwrite(imind,cm,filename,'gif', 'Loopcount',inf);
+    else
+        imwrite(imind,cm,filename,'gif','WriteMode','append');
+    end
+end

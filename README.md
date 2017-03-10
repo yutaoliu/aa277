@@ -1,5 +1,3 @@
-# aa277
-This is going to be my project.
 
 # Multi-UAV active thermal sensing
 
