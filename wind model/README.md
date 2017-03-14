@@ -1,4 +1,4 @@
-# Wind model
+# Wind model - not actually used
 
 
 The vertical wind velocity distribution is modelled as a scalar field with Gaussian components.
