@@ -62,7 +62,10 @@ The issue with tracking setpoint with L/R control: the glider aligns itself quic
 Tangent of the banking angle tan(theta)::[-1,1] is mapped from left and right average vertical speeds as follows.
 
 ![bankmap](bankmap.png)
+
 The results are still not satisfactory, such that some thermal centering algorithm is necessary beside consensus control.
 ![](bank4.gif)
 
+ALOFT: Thermal centering algorithm
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.944.7000&rep=rep1&type=pdf
 ## Reference
