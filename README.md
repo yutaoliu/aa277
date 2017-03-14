@@ -37,11 +37,13 @@ The challenges are twofold:
 __Solution__: We model the wind velocity induced by each thermal as a scalar field that
 - gliders are constantly on the fly can cannot be modeled by single integrator dynamics
 
+## Estimation
+Each glider maintains a belief vector over the strengths of thermals centered on a grid of known locations. It is expected that, similar to range-only mapping, encountering each thermal would decrease the uncertainty in the respective strength.
 
- 
+Estimation is coupled with control in this active sensing problem,
 ## Simulation setup
 
-## Performance
+## Policy
 
 ### Left/Right
 Gliders either turn left(CCW) or right(CW) by comparing the average sink rate of gliders on its left and right side.
