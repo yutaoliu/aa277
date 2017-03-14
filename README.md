@@ -59,6 +59,9 @@ Gliders track the particles with single integrator dynamics with L/R control.
 The issue with tracking setpoint with L/R control: the glider aligns itself quickly, but once it reaches the point, it just passes with no return. => L/R logic cannot distinguish approach/departure => need to incorporate information on rate-of-change in distance.
 
 ## Banking Control
-Tangent of the banking angle tan(theta)::[-1,1] (max. banking angle 45deg)
-![bankmap](bankmap.eps)
+Tangent of the banking angle tan(theta)::[-1,1] is mapped from left and right average vertical speeds as follows.
+
+![bankmap](bankmap.png)
+
+
 ## Reference
