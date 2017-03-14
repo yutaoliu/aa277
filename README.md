@@ -8,6 +8,36 @@ This practice, known as *thermaling*, is also common among large birds to conser
 But thermals are by nature not visible, and could not be remotely sensed, meaning that its information is only locally available. 
 This makes it difficult for a single glider to search for thermals on its own. 
 Yet each glider could monitor the relative motion of its neighbors and thus navigate towards areas of stronger upwinds. Our hypothesis is that a group of UAV gliders could reach a consensus about the optimal position, and navigate themselves to a formation that benefits most out of the thermal.
+
+## Thermal model
+Allen's https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20060004052.pdf cited by
+http://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1465&context=theses
+
+https://www.nrl.navy.mil/content_images/11_FA1.pdf
+" thermal is radially symmetric about
+Up, up, and away…
+84 2011 NRL REVIEW | featured research
+a center point, does not create horizontal winds, drifts
+with the ambient wind velocity, and is invariant with
+altitude and time. Figure 1 shows the modified threedimensional
+Gaussian distribution chosen to represent
+vertical wind speeds in a thermal. Its main features
+are the characteristic “core” region of rising air and a
+ring of sinking air around the core. This reduced-order
+model is based on four parameters: the two-dimensional
+center location, peak updraft strength, and characteristic
+radius"
+
+estimating a modified Gaussian model by recursive UKF from total energy
+ 
+## Challenges/Significance
+The challenges are twofold:
+
+- gliders cannot sense each thermal individually, they only measure the total upwash contribution from all thermals from their positions
+Solution: We model the wind velocity induced by each thermal as a scalar field that
+- gliders are constantly on the fly can cannot be modeled by single integrator dynamics
+
+
  
 ## Simulation setup
 
