@@ -43,8 +43,8 @@ Each glider maintains a belief vector over the strengths of thermals centered on
 Estimation is coupled with control in this active sensing problem,
 ## Simulation setup
 
-## Policy
-
+## Naive Policies
+Naive, binary policies {0,1} are not sufficient.
 ### Left/Right
 Gliders either turn left(CCW) or right(CW) by comparing the average sink rate of gliders on its left and right side.
 ![](test41.gif)
@@ -58,4 +58,7 @@ Gliders track the particles with single integrator dynamics with L/R control.
 
 The issue with tracking setpoint with L/R control: the glider aligns itself quickly, but once it reaches the point, it just passes with no return. => L/R logic cannot distinguish approach/departure => need to incorporate information on rate-of-change in distance.
 
+## Banking Control
+Tangent of the banking angle tan(theta)::[-1,1] (max. banking angle 45deg)
+![bankmap](bankmap.eps)
 ## Reference
