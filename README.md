@@ -2,7 +2,7 @@
 # Multi-UAV active thermal sensing
 
 Like birds, gliders soar by gaining power from thermals, columns of rising air of varying sizes and strengths. 
-In the absence of wind, gliders descend down a path governed by the gliding ratio $$L/D$$. 
+In the absence of wind, gliders descend down a path governed by the gliding ratio $L/D$. 
 But by exploiting the upwind present in thermals, gliders are not only able to keep afloat, but also gain height by circling in on the column of rising air. 
 This practice, known as *thermaling*, is also common among large birds to conserve energy. 
 But thermals are by nature not visible, and could not be remotely sensed, meaning that its information is only locally available. 
@@ -34,7 +34,7 @@ estimating a modified Gaussian model by recursive UKF from total energy
 The challenges are twofold:
 
 - gliders cannot sense each thermal individually, they only measure the total upwash contribution from all thermals from their positions
-Solution: We model the wind velocity induced by each thermal as a scalar field that
+_Solution_: We model the wind velocity induced by each thermal as a scalar field that
 - gliders are constantly on the fly can cannot be modeled by single integrator dynamics
 
 
