@@ -2,7 +2,7 @@
 # Multi-UAV active thermal sensing
 
 Like birds, gliders soar by gaining power from thermals, columns of rising air of varying sizes and strengths. 
-In the absence of wind, gliders descend down a path governed by the gliding ratio $L/D$. 
+In the absence of wind, gliders descend down a path governed by the gliding ratio. 
 But by exploiting the upwind present in thermals, gliders are not only able to keep afloat, but also gain height by circling in on the column of rising air. 
 This practice, known as *thermaling*, is also common among large birds to conserve energy. 
 But thermals are by nature not visible, and could not be remotely sensed, meaning that its information is only locally available. 
@@ -12,6 +12,8 @@ Yet each glider could monitor the relative motion of its neighbors and thus navi
 ## Thermal model
 Allen's https://ntrs.nasa.gov/archive/nasa/casi.ntrs.nasa.gov/20060004052.pdf cited by
 http://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1465&context=theses
+
+![](http://campar.in.tum.de/twiki/pub/Chair/HaukeHeibelGaussianDerivatives/gauss2d00.png)
 
 https://www.nrl.navy.mil/content_images/11_FA1.pdf
 " thermal is radially symmetric about
@@ -34,7 +36,7 @@ estimating a modified Gaussian model by recursive UKF from total energy
 The challenges are twofold:
 
 - gliders cannot sense each thermal individually, they only measure the total upwash contribution from all thermals from their positions
-_Solution_: We model the wind velocity induced by each thermal as a scalar field that
+__Solution__: We model the wind velocity induced by each thermal as a scalar field that
 - gliders are constantly on the fly can cannot be modeled by single integrator dynamics
 
 
@@ -44,11 +46,11 @@ _Solution_: We model the wind velocity induced by each thermal as a scalar field
 ## Performance
 
 ### LeftOrRight
-Gliders either turn left(CCW) or right(CW).
+Gliders either turn left(CCW) or right(CW) by comparing the average sink rate of gliders on its left and right side.
 ![](test41.gif)
 
 ### LeftOrStraight
-Gliders either turn left(CCW) or head straight.
+Gliders either turn left(CCW) or head straight by comparing the average sink rate of gliders on its left and its own sink rate.
 ![](test42.gif)
 
 ### L/R Tracking
