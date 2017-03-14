@@ -9,14 +9,17 @@ But thermals are by nature not visible, and could not be remotely sensed, meanin
 This makes it difficult for a single glider to search for thermals on its own. 
 Yet each glider could monitor the relative motion of its neighbors and thus navigate towards areas of stronger upwinds. Our hypothesis is that a group of UAV gliders could reach a consensus about the optimal position, and navigate themselves to a formation that benefits most out of the thermal.
  
-## Problem formulation
-
-Consider a group of UAVs operating in a certain area where the strength (and direction) of drafts vary.
-The goal is to manoeuvre the UAVs to locate the most favorable thermal.
-
-## Methodology
-
-
 ## Simulation setup
 
-## Literature
+## Performance
+
+### LeftOrRight
+Gliders either turn left(CCW) or right(CW).
+
+### LeftOrStraight
+Gliders either turn left(CCW) or head straight.
+
+### L/R Tracking
+Gliders track the particles with single integrator dynamics with L/R control.
+
+## Reference
