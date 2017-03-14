@@ -15,11 +15,15 @@ Yet each glider could monitor the relative motion of its neighbors and thus navi
 
 ### LeftOrRight
 Gliders either turn left(CCW) or right(CW).
+![](test41.gif)
 
 ### LeftOrStraight
 Gliders either turn left(CCW) or head straight.
+![](test42.gif)
 
 ### L/R Tracking
 Gliders track the particles with single integrator dynamics with L/R control.
+
+The issue with tracking setpoint with L/R control: the glider aligns itself quickly, but once it reaches the point, it just passes with no return. => L/R logic cannot distinguish approach/departure => need to incorporate information on rate-of-change in distance.
 
 ## Reference
