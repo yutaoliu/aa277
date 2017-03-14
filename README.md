@@ -17,8 +17,6 @@ http://digitalcommons.calpoly.edu/cgi/viewcontent.cgi?article=1465&context=these
 
 https://www.nrl.navy.mil/content_images/11_FA1.pdf
 " thermal is radially symmetric about
-Up, up, and away…
-84 2011 NRL REVIEW | featured research
 a center point, does not create horizontal winds, drifts
 with the ambient wind velocity, and is invariant with
 altitude and time. Figure 1 shows the modified threedimensional
