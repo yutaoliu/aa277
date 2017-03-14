@@ -45,11 +45,11 @@ __Solution__: We model the wind velocity induced by each thermal as a scalar fie
 
 ## Performance
 
-### LeftOrRight
+### Left/Right
 Gliders either turn left(CCW) or right(CW) by comparing the average sink rate of gliders on its left and right side.
 ![](test41.gif)
 
-### LeftOrStraight
+### Left/Straight
 Gliders either turn left(CCW) or head straight by comparing the average sink rate of gliders on its left and its own sink rate.
 ![](test42.gif)
 
