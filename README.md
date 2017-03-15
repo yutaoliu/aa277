@@ -68,4 +68,7 @@ The results are still not satisfactory, such that some thermal centering algorit
 
 ALOFT: Thermal centering algorithm
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.944.7000&rep=rep1&type=pdf
+
+## Thermal Centering
+![](https://www.youtube.com/watch?v=d5WoZTN0kvE)
 ## Reference
