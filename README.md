@@ -70,5 +70,5 @@ ALOFT: Thermal centering algorithm
 http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.944.7000&rep=rep1&type=pdf
 
 ## Thermal Centering
-![](https://www.youtube.com/watch?v=d5WoZTN0kvE)
+![](https://img.youtube.com/vi/d5WoZTN0kvE/0.jpg)[https://www.youtube.com/watch?v=d5WoZTN0kvE]
 ## Reference
