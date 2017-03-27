@@ -1,5 +1,5 @@
 
-## Control Algorithms for Collaborative Thermal Sensing Consensus
+# Control Algorithms for Collaborative Thermal Sensing Consensus
 
 Here are simulation playbacks from various trials, followed by our main result.
 
