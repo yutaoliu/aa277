@@ -1,5 +1,5 @@
 
-# Control Algorithms for Collaborative Thermal Sensing Consensus
+## Control Algorithms for Collaborative Thermal Sensing Consensus
 
 Here are simulation playbacks from various trials, followed by our main result.
 
@@ -12,11 +12,6 @@ Gliders either turn left(CCW) or right(CW) by comparing the average sink rate of
 ### Left/Straight
 Gliders either turn left(CCW) or head straight by comparing the average sink rate of gliders on its left and its own sink rate.
 ![](test42.gif)
-
-### L/R Tracking
-Gliders track the particles with single integrator dynamics with L/R control.
-
-The issue with tracking setpoint with L/R control: the glider aligns itself quickly, but once it reaches the point, it just passes with no return. => L/R logic cannot distinguish approach/departure => need to incorporate information on rate-of-change in distance.
 
 ## Banking Control
 Tangent of the banking angle tan(theta)::[-1,1] is mapped from left and right average vertical speeds as follows.
